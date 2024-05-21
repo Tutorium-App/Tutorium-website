@@ -22,3 +22,21 @@ export const bannerImg = {
   Umat,
   Tech,
 };
+
+import python from "../../assets/python.png";
+import web1 from "../../assets/web1.png";
+import web2 from "../../assets/web2.png";
+import forex from "../../assets/forex.png";
+import circuit from "../../assets/circuit.png";
+import arduino from "../../assets/arduino.png";
+import calculus from "../../assets/calculus.png";
+
+export const dataImg = {
+  python,
+  web1,
+  web2,
+  forex,
+  circuit,
+  arduino,
+  calculus,
+};
