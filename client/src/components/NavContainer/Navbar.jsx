@@ -37,15 +37,17 @@ const Navbar = () => {
     <header className={isScrolled ? "scrolled header" : "header"}>
       <div className="logo-container">
         <span className="nav_logo">
-          <img
-            src={img.logo}
-            className="logo"
-            alt="Tutorium Logo"
-            title="Tutorium Logo"
-            width={"inherit"}
-            height={"inherit"}
-            loading="eager"
-          />
+          <a href="#">
+            <img
+              src={img.logo}
+              className="logo"
+              alt="Tutorium Logo"
+              title="Tutorium Logo"
+              width={"inherit"}
+              height={"inherit"}
+              loading="eager"
+            />
+          </a>
         </span>
       </div>
       <ul className="list-dsk desktop">

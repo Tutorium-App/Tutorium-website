@@ -316,7 +316,7 @@
   word-spacing: 10px;
   font-weight: 400;
   color: #000002ad;
-  margin-bottom: 2rem;
+  margin-block: 2rem 4rem;
   margin-left: 3rem;
   margin-inline: auto;
 }
@@ -326,17 +326,28 @@
   align-items: center;
   justify-content: space-between;
   width: 80%;
-  margin: 0 auto;
-
+  margin: 0 auto 2rem;
+  text-align: center;
+  line-height: 1.8rem;
   & h2 {
     text-align: center;
   }
   @media screen and (max-width: 975px) {
     flex-direction: column;
     gap: 2rem;
-    text-align: center;
   }
 }
+
+.content_per:last-child {
+  margin-top: 10%;
+  @media screen and (max-width: 975px) {
+    flex-direction: column-reverse;
+  }
+}
+.sub_monitize {
+  width: 300px;
+}
+
 .pers_img {
   display: flex;
   width: fit-content;

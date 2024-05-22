@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/model/ErrorPage";
 import ErrorBoundary from "./components/model/ErrorBoundary";
 import Home from "./container/pages/Home";
+import Perspective from "./components/Pers/Perspective";
 
 const App = () => {
   const Layout = ({ children }) => {
@@ -12,6 +13,7 @@ const App = () => {
         <Navbar />
         {/* <Home /> */}
         {children}
+        <Perspective />
       </main>
     );
   };

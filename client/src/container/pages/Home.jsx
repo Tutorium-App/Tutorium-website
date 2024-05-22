@@ -11,7 +11,6 @@ const Home = () => {
       <HomeLand />
       <About />
       <Services />
-      <Perspective />
     </main>
   );
 };
