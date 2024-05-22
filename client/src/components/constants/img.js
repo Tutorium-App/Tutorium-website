@@ -30,6 +30,8 @@ import forex from "../../assets/forex.png";
 import circuit from "../../assets/circuit.png";
 import arduino from "../../assets/arduino.png";
 import calculus from "../../assets/calculus.png";
+import accord from "../../assets/accord.png";
+import monitize from "../../assets/monitize.png";
 
 export const dataImg = {
   python,
@@ -39,4 +41,6 @@ export const dataImg = {
   circuit,
   arduino,
   calculus,
+  accord,
+  monitize,
 };

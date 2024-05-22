@@ -3,6 +3,7 @@ import "../styles/Home.css";
 import HomeLand from "../../components/Landing/HomeLand";
 import About from "../../components/About/About";
 import Services from "../../components/Serv/Services";
+import Perspective from "../../components/Pers/Perspective";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <HomeLand />
       <About />
       <Services />
+      <Perspective />
     </main>
   );
 };
