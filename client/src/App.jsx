@@ -6,6 +6,7 @@ import ErrorBoundary from "./components/model/ErrorBoundary";
 import Home from "./container/pages/Home";
 import Perspective from "./components/Pers/Perspective";
 import NewsLetter from "./components/Pers/NewsLetter";
+import Faq from "./components/Pers/Faq";
 
 const App = () => {
   const Layout = ({ children }) => {
@@ -16,6 +17,7 @@ const App = () => {
         {children}
         <Perspective />
         <NewsLetter />
+        <Faq />
       </main>
     );
   };

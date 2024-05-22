@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NewsLetter = () => {
   return (
@@ -19,6 +20,9 @@ const NewsLetter = () => {
             <button>Subscribe</button>
           </div>
         </form>
+        <span className="link_policy">
+          We care about your data in our <Link>privacy policy</Link>
+        </span>
       </div>
     </div>
   );
