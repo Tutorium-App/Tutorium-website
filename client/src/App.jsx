@@ -5,6 +5,7 @@ import ErrorPage from "./components/model/ErrorPage";
 import ErrorBoundary from "./components/model/ErrorBoundary";
 import Home from "./container/pages/Home";
 import Perspective from "./components/Pers/Perspective";
+import NewsLetter from "./components/Pers/NewsLetter";
 
 const App = () => {
   const Layout = ({ children }) => {
@@ -14,6 +15,7 @@ const App = () => {
         {/* <Home /> */}
         {children}
         <Perspective />
+        <NewsLetter />
       </main>
     );
   };
