@@ -7,7 +7,7 @@ import Perspective from "../../components/Pers/Perspective";
 
 const Home = () => {
   return (
-    <main className="container-main ">
+    <main className="container-main" id="home">
       <HomeLand />
       <About />
       <Services />

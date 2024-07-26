@@ -7,6 +7,7 @@ import Home from "./container/pages/Home";
 import Perspective from "./components/Pers/Perspective";
 import NewsLetter from "./components/Pers/NewsLetter";
 import Faq from "./components/Pers/Faq";
+import Footer from "./components/Pers/Footer";
 
 const App = () => {
   const Layout = ({ children }) => {
@@ -18,6 +19,7 @@ const App = () => {
         <Perspective />
         <NewsLetter />
         <Faq />
+        <Footer />
       </main>
     );
   };
@@ -31,6 +33,15 @@ const App = () => {
     {
       path: "/",
       element: <Layout children={<Home />} />,
+      // error element
+      errorElement: ({ error }) => (
+        <div>
+          <h2>An error occurred: {error.message}</h2>
+          <button>
+            <Link to={"/"}>Return Home</Link>
+          </button>
+        </div>
+      ),
     },
   ]);
 

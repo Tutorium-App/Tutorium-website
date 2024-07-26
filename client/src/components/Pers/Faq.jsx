@@ -135,33 +135,6 @@ export default function Faq() {
               fontWeight: "500",
             }}
           >
-            Is Tutorium in all Universities?
-          </AccordionSummary>
-          <AccordionDetails
-            sx={{
-              lineHeight: "1.5rem",
-            }}
-          >
-            Just like big things, we want to start small. Tutorium is currently
-            available just in UMaT, School of Railway and Infrastructure
-            Development.
-          </AccordionDetails>
-        </Accordion>
-
-        <Accordion
-          sx={{
-            boxShadow: "none",
-          }}
-        >
-          <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
-            aria-controls="panel3-content"
-            id="panel3-header"
-            sx={{
-              color: "#000",
-              fontWeight: "500",
-            }}
-          >
             How do I become a tutor on Tutorium?
           </AccordionSummary>
           <AccordionDetails
@@ -196,9 +169,9 @@ export default function Faq() {
               lineHeight: "1.5rem",
             }}
           >
-            Yes, you are eligible for a refund. Tutorium embraces integrity. To
-            request a refund, just use our app and place a refund request, and
-            we'll process it for you.
+            <b>Yes</b>, you are eligible for a refund. Tutorium embraces
+            integrity. To request a refund, just use our app and place a refund
+            request, and we'll process it for you.
           </AccordionDetails>
         </Accordion>
       </div>

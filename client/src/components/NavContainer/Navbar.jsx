@@ -70,37 +70,35 @@ const Navbar = () => {
           {/* ------------services navigation------ */}
           <NavLink
             style={{ color: "white" }}
-            to="/#services"
             onClick={() => scrollToSections("services")}
           >
             <span>Waitlist Features</span>
           </NavLink>
         </li>
-        <li>
-          {/* ------------team navigation------ */}
-          <NavLink
+        {/* <li> */}
+        {/* ------------team navigation------ */}
+        {/*   <NavLink
             style={{ color: "white" }}
             to="/#team"
             onClick={() => scrollToSections("team")}
           >
             <span>Terms & Conditions</span>
           </NavLink>
-        </li>
-        {/* ------------blog navigation---------- */}
-        {/* <li>
-          <NavLink style={{ color: "white" }} to="/blog">
-            <span>Blog</span>
-          </NavLink>
         </li> */}
+        {/* ------------blog navigation---------- */}
       </ul>
 
       {/* enquire now btn */}
       <div className="contact-btnMain desktop">
         <button>
           {/* Will be link */}
-          <NavLink to="/#contact" onClick={() => scrollToSections("contact")}>
+          <a
+            href="mailto:app.tutorium@gmail.com"
+            onClick={() => setToggled(!toggled)}
+            className="icon"
+          >
             Contact Us
-          </NavLink>
+          </a>
         </button>
       </div>
 
@@ -158,7 +156,7 @@ const Navbar = () => {
             </li>
             <li>
               {/* ------------team navigation------ */}
-              <NavLink
+              {/*     <NavLink
                 style={{ color: "white" }}
                 to="/#team"
                 onClick={() => scrollToSections("team")}
@@ -166,18 +164,17 @@ const Navbar = () => {
                 <span onClick={() => setToggled(!toggled)} className="icon">
                   Terms & Conditions
                 </span>
-              </NavLink>
+              </NavLink> */}
             </li>
             {/* ------------contact navigation---------- */}
             <li>
-              <NavLink
-                to="/#contact"
-                onClick={() => scrollToSections("contact")}
+              <a
+                href="mailto:app.tutorium@gmail.com"
+                onClick={() => setToggled(!toggled)}
+                className="icon"
               >
-                <span onClick={() => setToggled(!toggled)} className="icon">
-                  Contact Us
-                </span>
-              </NavLink>
+                <span>Contact Us</span>
+              </a>
             </li>
           </ul>
         </Sidebar>

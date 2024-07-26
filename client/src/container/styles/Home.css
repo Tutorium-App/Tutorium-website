@@ -308,6 +308,7 @@
 .perspective {
   background-color: rgba(245, 245, 245, 1);
   padding: 1rem 1.6rem;
+  margin-bottom: 5%;
 }
 .perspective h1 {
   font-size: clamp(1.6rem, 5vw, 1.8rem);
@@ -364,10 +365,13 @@
 
 /* NEWSLETTER */
 .newsLetter_container {
+  padding: 1rem 3%;
   margin-block: 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
+  gap: 3rem;
 }
 
 .newsLetter {
@@ -423,7 +427,7 @@
 .faqMain {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 10%;
+  margin-top: 6%;
   margin-bottom: 3rem;
   align-items: center;
   @media screen and (max-width: 765px) {

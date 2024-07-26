@@ -28,7 +28,7 @@ body,
   --fs18px: 1.125rem;
   --fs20px: 1.25rem;
 
-  --primary-color: #7fff00;
+  --primary-color: ;
   --secondary-color: #000000;
   --neutral-color: #ffffff;
 }
@@ -50,8 +50,11 @@ section {
   min-height: 100vh;
 }
 
-.App {
+img,
+svg {
+  pointer-events: none;
 }
+
 body {
   width: 100%;
   min-height: 100dvh;
