@@ -1,7 +1,7 @@
 footer {
   padding: 2rem 3%;
   background-color: rgb(10, 10, 10);
-  margin-top: 5%;
+  margin-top: 20%;
   color: white;
 }
 
@@ -29,13 +29,16 @@ a:not([class]) {
     gap: 2rem;
   }
 }
+
 .social_icons {
   display: inline;
 }
+
 hr {
   width: 100%;
   border-color: rgb(95, 95, 95);
 }
+
 .address_header {
   font-weight: 600;
   margin-bottom: 0.5rem;
@@ -43,6 +46,7 @@ hr {
   gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
+
   p {
     .title_address {
       gap: 1rem;
@@ -52,12 +56,14 @@ hr {
       display: block;
       margin-bottom: 0.8rem;
     }
+
     span:last-child {
       font-weight: 400;
       letter-spacing: 1px;
       color: rgb(198, 198, 198);
       pointer-events: fill;
       cursor: pointer;
+
       &:hover {
         color: white;
       }
@@ -70,14 +76,17 @@ hr {
     font-weight: 400;
     letter-spacing: 1px;
   }
+
   .social_icons_container {
     display: flex;
     gap: 1rem;
     justify-content: center;
     margin-top: 1rem;
+
     a {
       color: white;
       text-decoration: none;
+
       &:hover {
         color: rgb(19, 140, 239);
       }

@@ -26,6 +26,7 @@ const Navbar = () => {
       window.removeEventListener("scroll", scrollPage);
     };
   }, [isScrolled]);
+  console.log(toggled);
 
   const scrollToSections = (id) => {
     const el = document.getElementById(id);
@@ -109,14 +110,13 @@ const Navbar = () => {
           arrow
           style={{ zIndex: "9999999999", color: "white" }}
         >
-          <button>
-            <HiOutlineMenu
-              // <HiMenuAlt4
-              onClick={() => {
-                setToggled(!toggled);
-              }}
-              className="icon"
-            />
+          <button
+            onClick={() => {
+              setToggled(!toggled);
+              console.log("Something happened");
+            }}
+          >
+            <HiOutlineMenu className="icon" />
           </button>
         </Tooltip>
         <Sidebar
