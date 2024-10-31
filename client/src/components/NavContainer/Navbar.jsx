@@ -10,8 +10,6 @@ import { img } from "../constants/img";
 const Navbar = () => {
   const [toggled, setToggled] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
-
   useEffect(() => {
     const scrollPage = () => {
       if (window.scrollY > 50) {
@@ -26,7 +24,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", scrollPage);
     };
   }, [isScrolled]);
-  console.log(toggled);
 
   const scrollToSections = (id) => {
     const el = document.getElementById(id);
@@ -76,16 +73,8 @@ const Navbar = () => {
             <span>Waitlist Features</span>
           </NavLink>
         </li>
-        {/* <li> */}
         {/* ------------team navigation------ */}
-        {/*   <NavLink
-            style={{ color: "white" }}
-            to="/#team"
-            onClick={() => scrollToSections("team")}
-          >
-            <span>Terms & Conditions</span>
-          </NavLink>
-        </li> */}
+      
         {/* ------------blog navigation---------- */}
       </ul>
 
@@ -113,7 +102,6 @@ const Navbar = () => {
           <button
             onClick={() => {
               setToggled(!toggled);
-              console.log("Something happened");
             }}
           >
             <HiOutlineMenu className="icon" />
